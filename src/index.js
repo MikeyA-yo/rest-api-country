@@ -51,12 +51,10 @@ const getCountryData = async () => {
        
       </div>
     </div> `;
-      {
-        /* , Symbol:${curSym} Common Name:${cName}, Official Name: ${oName}, Native name: Official: ${nN}, Common:${nNa} <p>item ${typeof item}, ${index}, ${cName}, ${capital}, ${oName},${curName} ,${curSym}, ${population}</p> */
-      }
+
       newDiv.appendChild(button);
       container.appendChild(newDiv);
-      // document.querySelector(".see-more").addEventListener("click", seeMore);
+
       const bttn = () => {
         console.log("i got clicked");
 
@@ -126,11 +124,6 @@ const getCountryData = async () => {
         go.onclick = back;
       };
       button.onclick = bttn;
-
-      // document.querySelector("button").addEventListener("click", function () {
-
-      // .addEventListener("click", back);
-      // });
     });
 
     const dataDiv = Array.from(container.querySelectorAll("section"));
